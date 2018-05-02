@@ -1,0 +1,27 @@
+File Format:
+
+There are 2 files:
+<name>.meta - This stores the table metadata for the database
+<name>.db - This stores the row information for the database
+
+Each row is has a pack/unpack function for serialization. They are self contained, and support generics.
+The structs are written to memory first before being written to the disk.
+
+
+Table Struct Packing:
+table size|name|field types|address of first row
+
+Row Struct Packing:
+row size|field types|fields
+
+Strings are contained both ways, with preceeding sizes and a null terminator.
+
+Running:
+Run make to compile the code and then use `./mini <dbname>` to create a new database and interactive session.
+
+A few demo SQL queries are present in test_sql.sql
+
+NOTES:
+I'm sorry this code isn't well commented. I spent a lot of time working with it and still had to finish a big part of it on Sunday.
+
+However, I am glad the database works as I wanted to and has a lot of error checking, especially in the SQL syntax. Check out the lexer and parser for some LL(1) fun.
