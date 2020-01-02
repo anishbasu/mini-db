@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 #include "database.h"
 #include "parser.h"
-#include "util.h"
-#include <sys/stat.h>
 /*
  For char send &value
  For int send &value

@@ -6,11 +6,10 @@
 //  Copyright © 2017 Anish Basu. All rights reserved.
 //
 
-#include "tables.h"
-#include "rownodes.h"
 #include <string.h>
 #include <stdlib.h>
 #include "util.h"
+#include "tables.h"
 
 table* create_table(char* name, char*** field_names, char** field_types){
     table* new_table = (table *) malloc(sizeof(table));

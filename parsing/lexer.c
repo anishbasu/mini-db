@@ -6,9 +6,9 @@
 //  Copyright © 2017 Anish Basu. All rights reserved.
 //
 
-#include "lexer.h"
 #include <string.h>
 #include <stdlib.h>
+#include "lexer.h"
 
 char* Keywords[] = {
     "select",

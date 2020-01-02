@@ -6,12 +6,12 @@
 //  Copyright © 2017 Anish Basu. All rights reserved.
 //
 
-#include "parser.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include "util.h"
 #include "query.h"
+#include "parser.h"
 
 void print_args(ArgNode* args){
     for(ArgNode* it = args; it != NULL; it= it->next){

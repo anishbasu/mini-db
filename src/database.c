@@ -6,11 +6,11 @@
 //  Copyright © 2017 Anish Basu. All rights reserved.
 //
 
-#include "database.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include "util.h"
+#include "database.h"
 
 database* create_database(char* name){
     database* new_db = (database *) malloc(sizeof(database));
