@@ -6,16 +6,11 @@
 //  Copyright © 2017 Anish Basu. All rights reserved.
 //
 
-#include "query.h"
-#include "parser.h"
 #include <stdlib.h>
 #include <string.h>
 #include "util.h"
-#include "rownodes.h"
-#include "rows.h"
-#include "generics.h"
 #include "database.h"
-#include "tables.h"
+#include "query.h"
 
 QueryNode* add_queryNode(QueryNode** parent, rownode** child){
     QueryNode* new_node = (QueryNode *) malloc(sizeof(QueryNode));

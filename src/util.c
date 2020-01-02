@@ -6,10 +6,9 @@
 //  Copyright © 2017 Anish Basu. All rights reserved.
 //
 
-#include "util.h"
-#include "rownodes.h"
 #include <stdlib.h>
 #include <string.h>
+#include "util.h"
 
 void hexDump (char *desc, void *addr, int len) {
     int i;

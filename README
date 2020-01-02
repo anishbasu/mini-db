@@ -16,8 +16,11 @@ row size|field types|fields
 
 Strings are contained both ways, with preceeding sizes and a null terminator.
 
+Requirements:
+CMake (version 3.13 or above), GCC
+
 Running:
-Run make to compile the code and then use `./mini <dbname>` to create a new database and interactive session.
+Create a directory `build/` inside the root folder and `cd` into it. Run `cmake ..` followed by `make`.
 
 A few demo SQL queries are present in test_sql.sql
 
